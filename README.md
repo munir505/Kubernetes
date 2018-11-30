@@ -12,5 +12,5 @@ sudo ./install_kubectl
 ```bash
 kubectl expose deployment <deployment_name> --type LoadBalancer --port <application_port>
 ```
-#### To open application in url `<ip address>:port`
+#### To open application put `<ip address>:port` in URL
 Make sure in YAML file type is LoadBalancer not ClusterIp if not running in reverse proxy and not using expose command
