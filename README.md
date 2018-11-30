@@ -30,6 +30,11 @@ kubectl delete deployment,services <name>
 ```
 #### To open application put `<ip address>:port` in URL
 
+#### To Delete Deployments and services
+```bash
+kubectl scale --replicas=<amount> deployment/<application_name> 
+```
+
 Make sure in YAML file type is LoadBalancer not ClusterIp if not running in reverse proxy and not using expose command
 Python YAML file contains replicating functionality, to replicate the pods for load balancing
 Python file lacks expose area, so will need to run the above expose command
