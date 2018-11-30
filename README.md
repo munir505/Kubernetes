@@ -4,6 +4,18 @@
 ```bash
 gcloud auth login
 ```
+#### This creates the clusters
+```bash
+gcloud container clusters create <name> --zone <zone>
+```
+#### Deploys App from docker hub image using yaml file
+```bash
+kubectl create -f <file_name.yaml>
+```
+#### See whats running
+```bash
+kubectl get pods|services|deployment
+```
 #### Run as sudo in order to install kubectl
 ```bash
 sudo ./install_kubectl
