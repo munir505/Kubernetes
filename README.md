@@ -35,7 +35,15 @@ kubectl delete deployment,services <name>
 ```bash
 kubectl scale --replicas=<amount> deployment/<application_name> 
 ```
+
 `Above command make create and terminate pods to scale`
+
+#### To update an image
+```bash
+kubectl set image deployment <deployment_name> <deployment_name>=<image to update with>
+```
+##### To check status while updating
+`kubectl rollout status deployment python-server`
 
 Make sure in YAML file type is LoadBalancer not ClusterIp if not running in reverse proxy and not using expose command
 Python YAML file contains replicating functionality, to replicate the pods for load balancing
