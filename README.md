@@ -4,12 +4,12 @@
 ```bash
 gcloud auth login
 ```
-
-
-
 #### Run as sudo in order to install kubectl
 ```bash
 sudo ./install_kubectl
 ```
-
-Make sure in YAML file type is LoadBalancer not ClusterIp if not running in reverse proxy
+#### Exposes Deployment To allow to connect
+```bash
+kubectl expose deployment <deployment_name> --type LoadBalancer --port <application_port>
+```
+Make sure in YAML file type is LoadBalancer not ClusterIp if not running in reverse proxy and not using expose command
