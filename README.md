@@ -11,3 +11,5 @@ gcloud auth login
 ```bash
 sudo ./install_kubectl
 ```
+
+Make sure in YAML file type is LoadBalancer not ClusterIp if not running in reverse proxy
