@@ -1,4 +1,4 @@
-# Kubernetres
+# Kubernetes
 
 #### Use this to get vertification code
 ```bash
